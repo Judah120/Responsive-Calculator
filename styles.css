@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+outline: none;
+font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes h2 {
+  
+    50% {transform: scale(1.5); perspective: 100vmax; perspective-origin: 50% 100%;}
+    
+}
+.container > h2 {
+    justify-items: center;
+    position: fixed;
+    top: 150px;
+    font-size: 12px;
+    background-color: transparent;
+    animation: h2 5s ease-in 2s 4 alternate both;
+    
+}
+
+.calculator {
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px white,
+                      5px 5px 12px rgb(10, 10, 10);
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+}
+
+input {
+    grid-column: span 4;
+    height: 60px;
+    width: 260px;
+    background-color: white;
+    box-shadow: inset -5px -5px 12px white,
+                       5px 5px 12px rgb(10, 10, 10);
+    border: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 45px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: inset -5px -5px 12px white,
+                       5px 5px 12px black;
+    border: none;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.equals {
+    width: 112px;
+    border-radius: 40px;
+    box-shadow: inset -5px -5px 12px green,
+                       5px 5px 12px black;
+    border: none;
+    background-color: green;
+}
+
+.delete {
+    background-color: red;
+    box-shadow: inset -5px -5px 12px red,
+                       5px 5px 12px black;
+    border: none;
+}
+.clear {
+    background-color: yellow;
+    box-shadow: inset -5px -5px 12px yellow,
+                       5px 5px 12px black;
+    border: none;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .container > h2 {
+        top: 80px;
+    }
+    
+}
