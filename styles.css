@@ -22,8 +22,10 @@ font-family: sans-serif;
 .container > h2 {
     justify-items: center;
     position: fixed;
-    top: 150px;
-    font-size: 12px;
+    bottom: 10px;
+    right: 30px;
+    font-size: 15px;
+    color: white;
     background-color: transparent;
     animation: h2 5s ease-in 2s 4 alternate both;
     
@@ -94,7 +96,9 @@ button {
 @media only screen and (max-width: 600px){
     
     .container > h2 {
-        top: 80px;
+        bottom: 0;
+        right: 0;
+        font-size: 12px;
     }
     
 }
